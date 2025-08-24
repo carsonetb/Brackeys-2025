@@ -1,0 +1,7 @@
+guard: Hello
+guard: How are you doing?
+- Good
+	I'm glad to hear that!
+- Bad
+	Sorry to hear that
+[end_timeline]
