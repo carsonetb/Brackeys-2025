@@ -1,0 +1,20 @@
+guard: You're supposed to be in bed!
+- Excuse me sir, I have a terrible sleep walking problem
+	guard: Really?
+	player: Yeah, it's a horrible genetic condition.
+	guard: Oh. What's the condition called?
+	player: Uhh ... sleepwalkosis?
+	guard: Ha. You thought you could fool me, inmate? Get back to your cell.
+	set {sent_back_to_cell} = true
+- Sorry, I lost track of time.
+	guard: Really? What's that in your hands then?
+	if {num_items} > 0.0:
+		player: Uhh ...
+		guard: {item_1}s are confiscated during curfew! \
+\
+I'm taking these to the warden. Get back to your cell!
+		set {sent_back_to_cell} = true
+	else:
+		player: I've got nothing!
+		guard: Well, that's your first strike. Get back to your cell!
+		set {sent_back_to_cell} = true

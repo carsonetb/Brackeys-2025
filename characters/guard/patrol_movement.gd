@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const POINT_PRECISION: float = 50.0
+const POINT_PRECISION: float = 5.0
 
 var patrol_points: PackedVector2Array
 var point_count: int

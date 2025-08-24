@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackeys 2025"
-run/main_scene="uid://dm11xtb1q3xuw"
+run/main_scene="uid://bf70j8x5sn33j"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,15 +22,27 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"guard": "res://dialog/characters/guard.dch"
+"guard": "res://dialog/characters/guard.dch",
+"inmate": "res://dialog/characters/inmate.dch",
+"player": "res://dialog/characters/player.dch"
 }
 directories/dtl_directory={
-"timeline": "res://dialog/timelines/guard_convo.dtl"
+"caught_walking_1": "res://dialog/timelines/guard/caught_walking_1.dtl",
+"first_convo_1": "res://dialog/timelines/guard/first_convo_1.dtl",
+"first_convo_2": "res://dialog/timelines/guard/first_convo_2.dtl",
+"first_convo_3": "res://dialog/timelines/guard/first_convo_3.dtl"
 }
 layout/style_list=[""]
 layout/default_style=""
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"item_1": "",
+"item_2": "",
+"item_3": "",
+"num_items": 0,
+"scheduled_task": "eating lunch",
+"sent_back_to_cell": false
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
