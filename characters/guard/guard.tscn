@@ -1,22 +1,45 @@
-[gd_scene load_steps=3 format=3 uid="uid://djyd16lc160j4"]
+[gd_scene load_steps=6 format=3 uid="uid://djyd16lc160j4"]
 
 [ext_resource type="Script" uid="uid://bx0ifl2honjak" path="res://characters/guard/guard.gd" id="1_30cdx"]
 [ext_resource type="Script" uid="uid://br01v6v3ibdn" path="res://characters/guard/patrol_movement.gd" id="2_aoykg"]
+[ext_resource type="Script" uid="uid://x8k6etmyqxic" path="res://dialog/dialog_component.gd" id="2_lcryj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_di0wq"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lcryj"]
+size = Vector2(16, 16)
 
 [node name="Guard" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_30cdx")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -19.0
-offset_top = -20.0
-offset_right = 21.0
-offset_bottom = 20.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_di0wq")
 
-[node name="PatrolMovement" type="Node2D" parent="."]
-script = ExtResource("2_aoykg")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true
 
 [node name="VisionCone" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="VisionCone"]
 polygon = PackedVector2Array(0, 0, 360, 180, 360, -180)
+
+[node name="DialogComponent" type="Area2D" parent="."]
+script = ExtResource("2_lcryj")
+states = Dictionary[String, String]({
+"one": "guard/first_convo_1",
+"three": "guard/first_convo_3",
+"two": "guard/first_convo_2"
+})
+metadata/_custom_type_script = "uid://x8k6etmyqxic"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogComponent"]
+shape = SubResource("RectangleShape2D_lcryj")
+
+[node name="PatrolMovement" type="Node2D" parent="."]
+script = ExtResource("2_aoykg")

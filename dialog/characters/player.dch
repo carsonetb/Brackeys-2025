@@ -9,8 +9,8 @@
 "style": ""
 },
 &"default_portrait": "",
-&"description": "A guard",
-&"display_name": "Guard",
+&"description": "",
+&"display_name": "Player",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
