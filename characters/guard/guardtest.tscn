@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bx7cnb4q0ub4t"]
 
-[ext_resource type="PackedScene" uid="uid://djyd16lc160j4" path="res://guard.tscn" id="1_dps6f"]
+[ext_resource type="PackedScene" uid="uid://djyd16lc160j4" path="res://characters/guard/guard.tscn" id="1_dps6f"]
 
 [node name="guardtest" type="Node2D"]
 
