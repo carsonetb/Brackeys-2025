@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://de36lhn0m57xf"]
+
+[ext_resource type="Script" uid="uid://gscxknq3l3qq" path="res://item.gd" id="1_ydxdj"]
+
+[resource]
+script = ExtResource("1_ydxdj")
+item_name = "Banana"
+description = "Long, yellow, crescent shaped fruit."
+metadata/_custom_type_script = "uid://gscxknq3l3qq"
