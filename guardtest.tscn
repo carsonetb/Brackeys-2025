@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx7cnb4q0ub4t"]
+
+[ext_resource type="PackedScene" uid="uid://djyd16lc160j4" path="res://guard.tscn" id="1_dps6f"]
+
+[node name="guardtest" type="Node2D"]
+
+[node name="Guard" parent="." node_paths=PackedStringArray("patrol_line") instance=ExtResource("1_dps6f")]
+position = Vector2(335, 424)
+patrol_line = NodePath("../PatrolLine")
+
+[node name="PatrolLine" type="Line2D" parent="."]
+points = PackedVector2Array(462, 499, 152, 332, 321, 181, 462, 128, 539, 199, 577, 343, 541, 483)
+closed = true
