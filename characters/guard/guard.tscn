@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://djyd16lc160j4"]
 
-[ext_resource type="Script" uid="uid://bx0ifl2honjak" path="res://guard.gd" id="1_30cdx"]
-[ext_resource type="Script" uid="uid://br01v6v3ibdn" path="res://patrol_movement.gd" id="2_aoykg"]
+[ext_resource type="Script" uid="uid://bx0ifl2honjak" path="res://characters/guard/guard.gd" id="1_30cdx"]
+[ext_resource type="Script" uid="uid://br01v6v3ibdn" path="res://characters/guard/patrol_movement.gd" id="2_aoykg"]
 
 [node name="Guard" type="CharacterBody2D"]
 motion_mode = 1
