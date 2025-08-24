@@ -27,7 +27,7 @@ metadata/_edit_use_anchors_ = true
 [node name="VisionCone" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="VisionCone"]
-polygon = PackedVector2Array(0, 0, 360, 180, 360, -180)
+polygon = PackedVector2Array(0, 0, 180, 90, 180, -90)
 
 [node name="DialogComponent" type="Area2D" parent="."]
 script = ExtResource("2_lcryj")
