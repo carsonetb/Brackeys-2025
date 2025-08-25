@@ -5,6 +5,7 @@ extends TextureRect
 @export var slot_number: int
 
 var item: Item = null
+var selected: bool = false
 
 @onready var item_texture: TextureRect = get_node("ItemTexture")
 
