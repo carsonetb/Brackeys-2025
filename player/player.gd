@@ -16,6 +16,7 @@ func _process(delta: float) -> void:
 		direction.y -= 1
 	if Input.is_action_pressed("down"):
 		direction.y += 1
+	direction = direction.normalized()
 	velocity = direction * speed
 	position = precise_position
 	move_and_slide()
