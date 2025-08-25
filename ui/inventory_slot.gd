@@ -15,3 +15,8 @@ func remove_item() -> void:
 	item = null
 	text = ""
 	tooltip_text = ""
+
+
+func _on_button_down() -> void:
+	print("asdfasdfasdfasdf")
+	get_parent().slot_button_pressed(slot_number)

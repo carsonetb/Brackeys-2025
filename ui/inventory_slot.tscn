@@ -10,3 +10,5 @@ offset_bottom = 8.0
 theme_override_font_sizes/font_size = 8
 text_overrun_behavior = 3
 script = ExtResource("1_hjbju")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
