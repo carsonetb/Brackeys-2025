@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cug65wn40mv7i"]
+[gd_scene load_steps=4 format=3 uid="uid://cug65wn40mv7i"]
 
 [ext_resource type="Script" uid="uid://duwlto3hh73lt" path="res://environment/world.gd" id="1_01qa0"]
 [ext_resource type="PackedScene" uid="uid://lkuwl4wdhu8s" path="res://environment/rooms/room1.tscn" id="2_lj4vs"]
+[ext_resource type="PackedScene" uid="uid://rdqeitk88sby" path="res://player/player.tscn" id="3_wpdqg"]
 
 [node name="World" type="Node2D"]
 texture_filter = 1
 script = ExtResource("1_01qa0")
 
 [node name="Room1" parent="." instance=ExtResource("2_lj4vs")]
+
+[node name="Player" parent="." instance=ExtResource("3_wpdqg")]
+position = Vector2(109, 96)

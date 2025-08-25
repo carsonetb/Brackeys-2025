@@ -2,22 +2,24 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpn71wrf4nqso"
-path="res://.godot/imported/bombscuit.png-21da5bd95de5c6f4e09e947b2568b5bd.ctex"
+uid="uid://cla4xjskdgv45"
+path="res://.godot/imported/flower1.png-67609254de78477df4ad67c9bb66f7c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://item/bombscuit.png"
-dest_files=["res://.godot/imported/bombscuit.png-21da5bd95de5c6f4e09e947b2568b5bd.ctex"]
+source_file="res://art/flower1.png"
+dest_files=["res://.godot/imported/flower1.png-67609254de78477df4ad67c9bb66f7c9.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -25,6 +27,10 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
