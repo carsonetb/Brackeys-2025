@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6n083e3lxck"
-path="res://.godot/imported/couch1.png-a24ee46b3830a1ba433eb8e4e7603dd8.ctex"
+uid="uid://73sd70gyh8oi"
+path="res://.godot/imported/biscoin_icon.png-610fb10881538d652cd15dbdd6474a54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/couch1.png"
-dest_files=["res://.godot/imported/couch1.png-a24ee46b3830a1ba433eb8e4e7603dd8.ctex"]
+source_file="res://ui/biscoin_icon.png"
+dest_files=["res://.godot/imported/biscoin_icon.png-610fb10881538d652cd15dbdd6474a54.ctex"]
 
 [params]
 

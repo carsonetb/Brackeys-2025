@@ -7,12 +7,6 @@ extends CharacterBody2D
 @onready var precise_position: Vector2 = position
 
 func _process(delta: float) -> void:
-	for area: Area2D in detection_area.get_overlapping_areas():
-		if area is DialogComponent:
-			var dialog_component: DialogComponent = area as DialogComponent
-			if Input.is_action_just_pressed("interact"):
-				dialog_component.interact()
-	
 	var direction: Vector2
 	if Input.is_action_pressed("left"):
 		direction.x -= 1
