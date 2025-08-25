@@ -15,6 +15,7 @@ func _ready() -> void:
 	for i in range(num_slots):
 		var slot = InventorySlot.new()
 		hotbar.add_child(slot)
+		slot.custom_minimum_size = Vector2(64,64)
 		slots.append(slot)
 	
 	var item = Item.new()
