@@ -4,8 +4,7 @@ extends CharacterBody2D
 @export var speed: float 
 
 @onready var detection_area: Area2D = $DetectionArea
-
-var precise_position: Vector2
+@onready var precise_position: Vector2 = position
 
 func _process(delta: float) -> void:
 	for area: Area2D in detection_area.get_overlapping_areas():
@@ -24,4 +23,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("down"):
 		direction.y += 1
 	velocity = direction * speed
+	position = precise_position
 	move_and_slide()
+	precise_position = position
+	position = round(position)
