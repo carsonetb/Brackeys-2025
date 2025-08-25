@@ -2,10 +2,11 @@ class_name InventorySlot
 extends TextureRect
 
 
-var slot_number: int
+@export var slot_number: int
+
 var item: Item = null
 
-@onready var item_texture: TextureRect
+@onready var item_texture: TextureRect = get_node("ItemTexture")
 
 
 func set_item(new_item: Item) -> void:
