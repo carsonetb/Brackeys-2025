@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dli42btswes40"
-path="res://.godot/imported/Biscuit416.png-5ce22490b3ae828adb7d0a37f7fe0893.ctex"
+uid="uid://khkbuqfb1xbx"
+path="res://.godot/imported/bisgate_sheet.png-e71a46f6ad184101f8f668e105776ae3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Biscuit416.png"
-dest_files=["res://.godot/imported/Biscuit416.png-5ce22490b3ae828adb7d0a37f7fe0893.ctex"]
+source_file="res://art/bisgate_sheet.png"
+dest_files=["res://.godot/imported/bisgate_sheet.png-e71a46f6ad184101f8f668e105776ae3.ctex"]
 
 [params]
 

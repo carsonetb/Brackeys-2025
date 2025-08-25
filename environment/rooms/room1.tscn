@@ -1,13 +1,20 @@
-[gd_scene load_steps=5 format=4 uid="uid://lkuwl4wdhu8s"]
+[gd_scene load_steps=6 format=4 uid="uid://lkuwl4wdhu8s"]
 
 [ext_resource type="TileSet" uid="uid://cltuv35fuqnwe" path="res://environment/rooms/floor_tileset.tres" id="1_rq7yx"]
 [ext_resource type="Script" uid="uid://bkjk6g2bls1p3" path="res://environment/rooms/room.gd" id="1_yqelb"]
 [ext_resource type="Script" uid="uid://duwymsx5m85qu" path="res://environment/rooms/room_change.gd" id="3_7hkvu"]
 [ext_resource type="TileSet" uid="uid://cpup1bsgbshjl" path="res://environment/rooms/tileset.tres" id="3_yqelb"]
+[ext_resource type="PackedScene" uid="uid://dy1lx3tjavkep" path="res://environment/gate.tscn" id="5_ktdqk"]
 
 [node name="Room1" type="Node2D"]
 texture_filter = 1
 script = ExtResource("1_yqelb")
+
+[node name="SizeRect" type="ColorRect" parent="."]
+z_index = -1
+offset_right = 264.0
+offset_bottom = 264.0
+color = Color(0, 0, 0, 0.15294118)
 
 [node name="Floor" type="TileMapLayer" parent="."]
 position = Vector2(6, 0)
@@ -47,8 +54,5 @@ direction = 2
 width = 2
 metadata/_custom_type_script = "uid://duwymsx5m85qu"
 
-[node name="SizeRect" type="ColorRect" parent="."]
-z_index = -1
-offset_right = 264.0
-offset_bottom = 264.0
-color = Color(0, 0, 0, 0.15294118)
+[node name="Gate" parent="." instance=ExtResource("5_ktdqk")]
+position = Vector2(117, 21)
