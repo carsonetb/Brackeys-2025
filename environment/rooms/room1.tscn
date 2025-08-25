@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://lkuwl4wdhu8s"]
 
-[ext_resource type="TileSet" uid="uid://b18i1ln57ij80" path="res://environment/rooms/floor_tileset.tres" id="1_rq7yx"]
+[ext_resource type="TileSet" uid="uid://cltuv35fuqnwe" path="res://environment/rooms/floor_tileset.tres" id="1_rq7yx"]
 [ext_resource type="Script" uid="uid://bkjk6g2bls1p3" path="res://environment/rooms/room.gd" id="1_yqelb"]
 [ext_resource type="Script" uid="uid://duwymsx5m85qu" path="res://environment/rooms/room_change.gd" id="3_7hkvu"]
 [ext_resource type="TileSet" uid="uid://cpup1bsgbshjl" path="res://environment/rooms/tileset.tres" id="3_yqelb"]
