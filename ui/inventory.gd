@@ -4,25 +4,31 @@ extends Node2D
 
 @export var num_slots: int = 4
 
-var slots: Array[InventorySlot] = []
+
 var selected_slot: int = -1
 
-@onready var hotbar: GridContainer = $"Hotbar"
+
+@onready var slots: Array[InventorySlot] = [
+	$"InventorySlot1",
+	$"InventorySlot2",
+	$"InventorySlot3",
+	$"InventorySlot4",
+]
+@onready var inventory_slot: PackedScene = preload("res://ui/inventory_slot.tscn")
+@onready var slot_texture: Texture2D = preload("res://art/biscuintory_slot.png")
+@onready var aasdf: Texture2D = preload("res://art/Biscuit416.png")
 
 
 func _ready() -> void:
-	hotbar.columns = num_slots
 	
-	for i in range(num_slots):
-		var slot = InventorySlot.new()
-		slot.slot_number = i
-		hotbar.add_child(slot)
-		slot.custom_minimum_size = Vector2(64,64)
-		slots.append(slot)
+	
+	var skib: Item = Item.new()
+	skib.ui_sprite = aasdf
+	skib.description = "big boy"
+	add_item(skib)
 
 
 func _physics_process(delta: float) -> void:
-	print(selected_slot)
 	if Input.is_action_just_pressed("slot_1"):
 		selected_slot = 0
 	elif Input.is_action_just_pressed("slot_2"):
