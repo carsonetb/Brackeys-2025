@@ -1,0 +1,2 @@
+class_name Civillian
+extends CharacterBody2D

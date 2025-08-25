@@ -1,10 +1,7 @@
 class_name InventorySlot
-
 extends Button
 
-
 var item: Item = null
-
 
 func set_item(new_item: Item) -> void:
 	item = new_item

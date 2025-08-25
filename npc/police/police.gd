@@ -1,0 +1,2 @@
+class_name Police
+extends CharacterBody2D
