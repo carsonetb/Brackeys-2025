@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtwdujbpvdsp"
-path="res://.godot/imported/Bombscuit.png-876598f4f80e803024b6370b4813476b.ctex"
+uid="uid://bpn71wrf4nqso"
+path="res://.godot/imported/bombscuit.png-21da5bd95de5c6f4e09e947b2568b5bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://environment/item/Bombscuit.png"
-dest_files=["res://.godot/imported/Bombscuit.png-876598f4f80e803024b6370b4813476b.ctex"]
+source_file="res://item/bombscuit.png"
+dest_files=["res://.godot/imported/bombscuit.png-21da5bd95de5c6f4e09e947b2568b5bd.ctex"]
 
 [params]
 
