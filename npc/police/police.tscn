@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://d2a5x6haxsnoj"]
+[gd_scene load_steps=2 format=3 uid="uid://d2a5x6haxsnoj"]
 
-[node name="Police_tscn" type="Node2D"]
+[ext_resource type="Script" uid="uid://ugaaeusgyhqh" path="res://npc/police/police.gd" id="1_wpwdh"]
+
+[node name="Police" type="CharacterBody2D"]
+script = ExtResource("1_wpwdh")

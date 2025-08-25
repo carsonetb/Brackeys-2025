@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://b4a1ojnbmnjug"]
+[gd_scene load_steps=2 format=3 uid="uid://b4a1ojnbmnjug"]
 
-[node name="Civillian" type="Node2D"]
+[ext_resource type="Script" uid="uid://c80oxaioeu2jo" path="res://npc/civillian/civillian.gd" id="1_8nwm2"]
+
+[node name="Civillian" type="CharacterBody2D"]
+script = ExtResource("1_8nwm2")
