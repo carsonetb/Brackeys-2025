@@ -8,6 +8,7 @@ var slots: Array[InventorySlot] = []
 var selected_slot: int = -1
 
 @onready var hotbar: GridContainer = $"Hotbar"
+@onready var slot_texture: Texture2D = preload("res://art/biscuintory_slot.png")
 
 
 func _ready() -> void:
@@ -17,12 +18,12 @@ func _ready() -> void:
 		var slot = InventorySlot.new()
 		slot.slot_number = i
 		hotbar.add_child(slot)
-		slot.custom_minimum_size = Vector2(64,64)
+		slot.custom_minimum_size = Vector2(16,16)
+		slot.texture = slot_texture
 		slots.append(slot)
 
 
 func _physics_process(delta: float) -> void:
-	print(selected_slot)
 	if Input.is_action_just_pressed("slot_1"):
 		selected_slot = 0
 	elif Input.is_action_just_pressed("slot_2"):

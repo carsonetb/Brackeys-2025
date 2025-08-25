@@ -1,14 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://lb0qpqmdeb1m"]
+[gd_scene load_steps=3 format=3 uid="uid://lb0qpqmdeb1m"]
 
+[ext_resource type="Texture2D" uid="uid://crorddguwhlys" path="res://art/biscuintory_slot.png" id="1_6t8ig"]
 [ext_resource type="Script" uid="uid://c02wjwiih44pv" path="res://ui/inventory_slot.gd" id="1_hjbju"]
 
-[node name="InventorySlot" type="Button"]
+[node name="InventorySlot" type="TextureRect"]
 texture_filter = 1
-custom_minimum_size = Vector2(32, 32)
-offset_right = 8.0
-offset_bottom = 8.0
-theme_override_font_sizes/font_size = 8
-text_overrun_behavior = 3
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_6t8ig")
 script = ExtResource("1_hjbju")
 
-[connection signal="button_down" from="." to="." method="_on_button_down"]
+[node name="ItemTexture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

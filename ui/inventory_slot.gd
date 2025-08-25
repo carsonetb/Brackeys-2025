@@ -1,22 +1,19 @@
 class_name InventorySlot
-extends Button
+extends TextureRect
 
 
 var slot_number: int
 var item: Item = null
 
+@onready var item_texture: TextureRect
+
 
 func set_item(new_item: Item) -> void:
 	item = new_item
-	text = item.item_name
+	item_texture.texture = item.ui_sprite
 	tooltip_text = item.description
 
 func remove_item() -> void:
 	item = null
-	text = ""
+	item_texture.texture = null
 	tooltip_text = ""
-
-
-func _on_button_down() -> void:
-	print("asdfasdfasdfasdf")
-	get_parent().slot_button_pressed(slot_number)
