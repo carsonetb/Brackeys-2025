@@ -8,6 +8,7 @@ func set_item(new_item: Item) -> void:
 	text = item.item_name
 	tooltip_text = item.description
 
+
 func remove_item() -> void:
 	item = null
 	text = ""

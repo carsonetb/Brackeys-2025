@@ -2,7 +2,7 @@ class_name Inventory
 extends Node2D
 
 
-@export var num_slots: int = 3
+@export var num_slots: int = 4
 
 var slots: Array[InventorySlot] = []
 
@@ -18,8 +18,8 @@ func _ready() -> void:
 		slots.append(slot)
 	
 	var item = Item.new()
-	item.item_name = "Cat"
-	item.description = "A cat"
+	item.item_name = "gun"
+	item.description = "shoot"
 	add_item(item)
 
 
