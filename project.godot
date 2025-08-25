@@ -22,8 +22,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"guard": "res://dialog/characters/guard.dch",
-"inmate": "res://dialog/characters/inmate.dch",
 "player": "res://dialog/characters/player.dch"
 }
 directories/dtl_directory={
