@@ -22,6 +22,7 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	print(selected_slot)
 	if Input.is_action_just_pressed("slot_1"):
 		selected_slot = 0
 	elif Input.is_action_just_pressed("slot_2"):
