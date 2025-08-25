@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=4 uid="uid://bf70j8x5sn33j"]
 
-[ext_resource type="PackedScene" uid="uid://rdqeitk88sby" path="res://characters/player/player.tscn" id="1_lj4vs"]
+[ext_resource type="PackedScene" uid="uid://rdqeitk88sby" path="res://Scenes/player.tscn" id="1_lj4vs"]
 [ext_resource type="TileSet" uid="uid://dm6nk77k7mr1d" path="res://art/yard-tilemap.tres" id="1_na063"]
 [ext_resource type="TileSet" uid="uid://p8netvw64glb" path="res://art/cell-tilemap.tres" id="2_ktyio"]
-[ext_resource type="PackedScene" uid="uid://djyd16lc160j4" path="res://characters/guard/guard.tscn" id="2_wpdqg"]
+[ext_resource type="PackedScene" uid="uid://djyd16lc160j4" path="res://Scenes/guard.tscn" id="2_wpdqg"]
 [ext_resource type="Texture2D" uid="uid://d581j02p161o" path="res://art/bed.png" id="3_50k4n"]
 [ext_resource type="Texture2D" uid="uid://bf3mbn0dgw5v5" path="res://art/toilet.png" id="4_7yx4j"]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://djyd16lc160j4"]
 
-[ext_resource type="Script" uid="uid://bx0ifl2honjak" path="res://characters/guard/guard.gd" id="1_30cdx"]
-[ext_resource type="Script" uid="uid://br01v6v3ibdn" path="res://characters/guard/patrol_movement.gd" id="2_aoykg"]
-[ext_resource type="Script" uid="uid://x8k6etmyqxic" path="res://dialog/dialog_component.gd" id="2_lcryj"]
+[ext_resource type="Script" uid="uid://bx0ifl2honjak" path="res://Scripts/guard/guard.gd" id="1_30cdx"]
+[ext_resource type="Script" uid="uid://br01v6v3ibdn" path="res://Scripts/guard/patrol_movement.gd" id="2_aoykg"]
+[ext_resource type="Script" path="res://dialog/dialog_component.gd" id="2_lcryj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_di0wq"]
 size = Vector2(16, 16)
@@ -36,7 +36,6 @@ states = Dictionary[String, String]({
 "three": "guard/first_convo_3",
 "two": "guard/first_convo_2"
 })
-metadata/_custom_type_script = "uid://x8k6etmyqxic"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogComponent"]
 shape = SubResource("RectangleShape2D_lcryj")

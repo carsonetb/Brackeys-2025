@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://lb0qpqmdeb1m"]
 
-[ext_resource type="Script" uid="uid://c02wjwiih44pv" path="res://characters/player/inventory_slot.gd" id="1_hjbju"]
+[ext_resource type="Script" uid="uid://c02wjwiih44pv" path="res://Scripts/player/inventory_slot.gd" id="1_hjbju"]
 
 [node name="InventorySlot" type="Button"]
 texture_filter = 1
