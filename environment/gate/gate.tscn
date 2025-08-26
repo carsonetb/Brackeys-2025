@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dy1lx3tjavkep"]
 
-[ext_resource type="Script" uid="uid://duwc6jjrcwayc" path="res://environment/gate.gd" id="1_3kmtv"]
+[ext_resource type="Script" uid="uid://duwc6jjrcwayc" path="res://environment/gate/gate.gd" id="1_3kmtv"]
 [ext_resource type="Texture2D" uid="uid://khkbuqfb1xbx" path="res://art/bisgate_sheet.png" id="2_d6n7l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d6n7l"]

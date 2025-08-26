@@ -16,7 +16,7 @@ var selected_slot: int = -1
 ]
 @onready var inventory_slot: PackedScene = preload("res://ui/inventory_slot.tscn")
 @onready var slot_texture: Texture2D = preload("res://art/biscuintory_slot.png")
-@onready var aasdf: Texture2D = preload("res://art/Biscuit416.png")
+@onready var aasdf: Texture2D = preload("uid://dli42btswes40")
 
 
 func _ready() -> void:

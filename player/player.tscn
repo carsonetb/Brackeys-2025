@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://rdqeitk88sby"]
+[gd_scene load_steps=6 format=3 uid="uid://rdqeitk88sby"]
 
 [ext_resource type="Script" uid="uid://b8at4p6boy5pc" path="res://player/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://8jiy7qahyswn" path="res://ui/inventory.tscn" id="2_xxgcw"]
+[ext_resource type="PackedScene" uid="uid://bvnl4rcg0qxf1" path="res://item/weapons/biscuit_416.tscn" id="3_g1dw6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
-size = Vector2(16, 3)
+size = Vector2(16, 11)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4flbx"]
 radius = 11.0
@@ -14,10 +15,10 @@ script = ExtResource("1_4flbx")
 speed = 48.0
 
 [node name="Camera" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+zoom = Vector2(8, 8)
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 6.5)
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_sh265")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -35,3 +36,5 @@ shape = SubResource("CircleShape2D_4flbx")
 [node name="Inventory" parent="." instance=ExtResource("2_xxgcw")]
 position = Vector2(0, 50)
 scale = Vector2(0.5, 0.5)
+
+[node name="Biscuit416" parent="." instance=ExtResource("3_g1dw6")]

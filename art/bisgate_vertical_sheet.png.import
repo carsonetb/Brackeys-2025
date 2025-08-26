@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1v7m4707dti8"
-path="res://.godot/imported/Buiston.png-bd61ffec3b7ef77bcd4d12eb1f64a716.ctex"
+uid="uid://cdy6iff668kux"
+path="res://.godot/imported/bisgate_vertical_sheet.png-f51b96b33c7071b69f3e60f7f9079cb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Buiston.png"
-dest_files=["res://.godot/imported/Buiston.png-bd61ffec3b7ef77bcd4d12eb1f64a716.ctex"]
+source_file="res://art/bisgate_vertical_sheet.png"
+dest_files=["res://.godot/imported/bisgate_vertical_sheet.png-f51b96b33c7071b69f3e60f7f9079cb0.ctex"]
 
 [params]
 

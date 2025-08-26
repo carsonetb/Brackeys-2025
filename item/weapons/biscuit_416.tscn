@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvnl4rcg0qxf1"]
+
+[ext_resource type="Texture2D" uid="uid://dli42btswes40" path="res://art/biscuit_416.png" id="1_jryku"]
+[ext_resource type="Script" uid="uid://di48s3n2odmya" path="res://item/weapons/gun.gd" id="2_uvi6o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvi6o"]
+atlas = ExtResource("1_jryku")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6uxje"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvi6o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Biscuit416" type="Node2D"]
+script = ExtResource("2_uvi6o")
+
+[node name="Biscuit416" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-4, 0)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_6uxje")

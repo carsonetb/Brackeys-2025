@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://lb0qpqmdeb1m" path="res://ui/inventory_slot.tscn" id="2_70ao8"]
 
 [node name="Inventory" type="Node2D"]
+z_index = 1
 script = ExtResource("1_r0227")
 metadata/_custom_type_script = "uid://bbi716xp6mnoi"
 
