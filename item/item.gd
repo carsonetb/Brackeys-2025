@@ -1,5 +1,5 @@
 class_name Item
-extends Node2D
+extends Resource
 
 
 @export var item_name: String

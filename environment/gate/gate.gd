@@ -7,4 +7,4 @@ func _ready() -> void:
 
 func open() -> void:
 	$Animation.play("open")
-	$CollisionShape2D.disabled = false
+	$CollisionShape2D.set_deferred("disabled", false)

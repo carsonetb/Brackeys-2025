@@ -4,7 +4,6 @@ extends CharacterBody2D
 @export var speed: float 
 
 @onready var detection_area: Area2D = $DetectionArea
-@onready var precise_position: Vector2 = position
 
 func _process(delta: float) -> void:
 	var direction: Vector2
@@ -18,7 +17,16 @@ func _process(delta: float) -> void:
 		direction.y += 1
 	direction = direction.normalized()
 	velocity = direction * speed
-	position = precise_position
 	move_and_slide()
-	precise_position = position
-	position = round(position)
+
+func _on_inventory_item_selected(item: Item) -> void:
+	for child: Node2D in $Items.get_children():
+		if "active" in child:
+			child.active = false
+	if !item:
+		return
+	var node: Node2D = get_node_or_null("Items/" + item.item_name)
+	if !node:
+		print("Item with name " + item.item_name + " doesn't exist.")
+		return
+	node.active = true

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://j7pj6dtrxku4"]
+
+[ext_resource type="Script" uid="uid://gscxknq3l3qq" path="res://item/item.gd" id="1_b6is4"]
+[ext_resource type="PackedScene" uid="uid://bvnl4rcg0qxf1" path="res://item/weapons/biscuit_416.tscn" id="1_gp2vt"]
+[ext_resource type="Texture2D" uid="uid://dli42btswes40" path="res://art/biscuit_416.png" id="2_fj6hq"]
+
+[resource]
+script = ExtResource("1_b6is4")
+item_name = "Biscuit416"
+description = "Fully automatic rifle"
+ui_sprite = ExtResource("2_fj6hq")
+item_scene = ExtResource("1_gp2vt")
+metadata/_custom_type_script = "uid://gscxknq3l3qq"
