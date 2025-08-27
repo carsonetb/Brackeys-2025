@@ -1,7 +1,18 @@
 class_name Gun 
 extends Weapon
 
-func _process(_delta: float) -> void:
+@export var bullet_scene: PackedScene
+@export var shoot_cooldown_time: float
+@export var shoot_speed: float 
+
+var shoot_cooldown: float = shoot_cooldown_time
+
+func _process(delta: float) -> void:
+	if shoot_cooldown > 0:
+		shoot_cooldown -= delta
+		if shoot_cooldown < 0:
+			shoot_cooldown = 0
+	
 	if !active:
 		visible = false
 		return
@@ -24,4 +35,9 @@ func point_towards(pos: Vector2, smoothing_enabled: bool = false) -> void:
 		rotation -= TAU
 
 func use_weapon() -> void:
-	pass
+	if shoot_cooldown == 0:
+		shoot_cooldown = shoot_cooldown_time
+		var bullet: Bullet = bullet_scene.instantiate()
+		get_parent().add_child(bullet)
+		bullet.global_position = global_position
+		bullet.shoot(Vector2.from_angle(rotation + PI), shoot_speed, get_parent())

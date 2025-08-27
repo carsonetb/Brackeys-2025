@@ -2,6 +2,7 @@ class_name Police
 extends CharacterBody2D
 
 @export var weapon_scene: PackedScene
+@export var bullet_scene: PackedScene
 
 @onready var player: Player = get_parent().player
 @onready var player_raycast: RayCast2D = $PlayerRaycast
@@ -29,3 +30,4 @@ func _process(delta: float) -> void:
 	weapon.active = true
 	if !player_raycast.is_colliding():
 		weapon.point_towards(player.global_position, true)
+		weapon.use_weapon()
