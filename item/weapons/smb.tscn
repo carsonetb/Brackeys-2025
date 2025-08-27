@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk2rutp8c0ldl"]
+
+[ext_resource type="Script" uid="uid://di48s3n2odmya" path="res://item/weapons/gun.gd" id="1_fpr87"]
+[ext_resource type="Texture2D" uid="uid://b2bg0togdr5ai" path="res://art/SMB.png" id="1_md4gs"]
+
+[node name="SMB" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_fpr87")
+
+[node name="Smb" type="Sprite2D" parent="."]
+scale = Vector2(0.50000006, 0.50000006)
+texture = ExtResource("1_md4gs")

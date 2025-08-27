@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://lkuwl4wdhu8s"]
+[gd_scene load_steps=9 format=4 uid="uid://lkuwl4wdhu8s"]
 
 [ext_resource type="TileSet" uid="uid://cltuv35fuqnwe" path="res://environment/rooms/floor_tileset.tres" id="1_rq7yx"]
 [ext_resource type="Script" uid="uid://bkjk6g2bls1p3" path="res://environment/rooms/room.gd" id="1_yqelb"]
@@ -6,6 +6,8 @@
 [ext_resource type="TileSet" uid="uid://cpup1bsgbshjl" path="res://environment/rooms/tileset.tres" id="3_yqelb"]
 [ext_resource type="PackedScene" uid="uid://dy1lx3tjavkep" path="res://environment/gate/gate.tscn" id="5_ktdqk"]
 [ext_resource type="PackedScene" uid="uid://cmqw81ob24ct3" path="res://environment/gate/gate_vertical.tscn" id="6_7tp3i"]
+[ext_resource type="PackedScene" uid="uid://d2a5x6haxsnoj" path="res://npc/police/police.tscn" id="7_wpuiy"]
+[ext_resource type="PackedScene" uid="uid://bvnl4rcg0qxf1" path="res://item/weapons/biscuit_416.tscn" id="8_hqeea"]
 
 [node name="Room1" type="Node2D"]
 texture_filter = 1
@@ -75,5 +77,9 @@ position = Vector2(222, 151)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LevelArea"]
 polygon = PackedVector2Array(30, 32, 138, 32, 138, 120, 214, 120, 214, 148, 47, 148, 47, 52, 30, 52)
+
+[node name="Police" parent="." instance=ExtResource("7_wpuiy")]
+position = Vector2(83, 73)
+weapon_scene = ExtResource("8_hqeea")
 
 [connection signal="area_entered" from="LevelArea" to="." method="_on_level_area_area_entered"]

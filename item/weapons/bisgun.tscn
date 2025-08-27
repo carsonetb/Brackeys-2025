@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwk2cbnv7c7jp"]
+
+[ext_resource type="Script" uid="uid://di48s3n2odmya" path="res://item/weapons/gun.gd" id="1_2ovsv"]
+[ext_resource type="Texture2D" uid="uid://buhy067clb0i0" path="res://art/bisgun_sheet.png" id="2_ww2tt"]
+
+[node name="Bisgun" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_2ovsv")
+
+[node name="BisgunSheet" type="Sprite2D" parent="."]
+scale = Vector2(0.50000006, 0.50000006)
+texture = ExtResource("2_ww2tt")
+region_enabled = true
+region_rect = Rect2(0, 0, 20.662857, 16)

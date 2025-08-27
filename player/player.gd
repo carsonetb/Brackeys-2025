@@ -1,9 +1,12 @@
+class_name Player
 extends CharacterBody2D
 
 ## Pixels per second
 @export var speed: float 
 
 @onready var detection_area: Area2D = $DetectionArea
+
+var current_weapon: Weapon
 
 func _process(delta: float) -> void:
 	var direction: Vector2
@@ -18,6 +21,9 @@ func _process(delta: float) -> void:
 	direction = direction.normalized()
 	velocity = direction * speed
 	move_and_slide()
+	
+	if current_weapon:
+		current_weapon.point_towards(get_global_mouse_position())
 
 func _on_inventory_item_selected(item: Item) -> void:
 	for child: Node2D in $Items.get_children():
@@ -30,3 +36,5 @@ func _on_inventory_item_selected(item: Item) -> void:
 		print("Item with name " + item.item_name + " doesn't exist.")
 		return
 	node.active = true
+	if node is Weapon:
+		current_weapon = node

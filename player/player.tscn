@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://rdqeitk88sby"]
+[gd_scene load_steps=9 format=3 uid="uid://rdqeitk88sby"]
 
 [ext_resource type="Script" uid="uid://b8at4p6boy5pc" path="res://player/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://8jiy7qahyswn" path="res://ui/inventory.tscn" id="2_xxgcw"]
 [ext_resource type="PackedScene" uid="uid://bvnl4rcg0qxf1" path="res://item/weapons/biscuit_416.tscn" id="3_g1dw6"]
 [ext_resource type="Texture2D" uid="uid://7oq3rf227hdm" path="res://art/player.png" id="4_yw30f"]
+[ext_resource type="PackedScene" uid="uid://bwk2cbnv7c7jp" path="res://item/weapons/bisgun.tscn" id="5_qjkh3"]
+[ext_resource type="PackedScene" uid="uid://dk2rutp8c0ldl" path="res://item/weapons/smb.tscn" id="6_g6k8r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 size = Vector2(6, 14)
@@ -37,6 +39,10 @@ scale = Vector2(0.5, 0.5)
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Biscuit416" parent="Items" instance=ExtResource("3_g1dw6")]
+
+[node name="Bisgun" parent="Items" instance=ExtResource("5_qjkh3")]
+
+[node name="SMB" parent="Items" instance=ExtResource("6_g6k8r")]
 
 [node name="Camera" type="Camera2D" parent="."]
 zoom = Vector2(8, 8)

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://dpwsew1s4juke"]
+
+[ext_resource type="Script" uid="uid://gscxknq3l3qq" path="res://item/item.gd" id="1_2w57h"]
+[ext_resource type="PackedScene" uid="uid://bwk2cbnv7c7jp" path="res://item/weapons/bisgun.tscn" id="1_tdar0"]
+[ext_resource type="Texture2D" uid="uid://csb7phxtqsqux" path="res://art/bisgun.png" id="2_bqa85"]
+
+[resource]
+script = ExtResource("1_2w57h")
+item_name = "Bisgun"
+description = "Pistol"
+ui_sprite = ExtResource("2_bqa85")
+item_scene = ExtResource("1_tdar0")
+metadata/_custom_type_script = "uid://gscxknq3l3qq"
